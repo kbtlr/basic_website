@@ -1,1 +1,3 @@
-# A basic website to serve as supplementary learning for my Gym App
+# Basic Website
+
+My attempt to use online guides and resources to develop a simple website. Possiblility of further developing the site for my own use.
