@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Web Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just a website</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -22,7 +22,7 @@
       <nav>
         <div class="nav-links">
           <i class="fa fa-bars" onclick="toggleMenu()"></i>
-          <a href="#hero-section" class="hero-link">lemonadestand</a>
+          <a href="#hero-section" class="hero-link">Just a website</a>
 
           <div id="nav-links-sub">
             <ul>
@@ -34,71 +34,168 @@
         </div>
       </nav>
     </header>
+    <!-- Landing Section  -->
+
+    <section id="hero-section">
+      <div class="hero-title">
+        <div class="hero-sub-container-one">
+          <span id="title-one">When the</span>
+        </div>
+        <div class="hero-sub-container-two">
+          <img
+            src="assets/images/picture.png"
+            id="picture"
+            class="rotate"
+            alt=""
+          />
+          <img
+            src="assets/images/picture.png"
+            id="picture-two"
+            class="rotate"
+            alt=""
+          />
+          <span id="title-two">uhhhhh</span>
+        </div>
+      </div>
+    </section>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- About Us  -->
+
+    <section id="about-us">
+      <div class="about-us-container">
+        <div class="about-us-row reveal">
+          <div class="about-us-col">
+            <h3>what about us</h3>
+            <p>
+              Placeholder
+            </p>
+          </div>
+          <div class="about-us-col">
+            <h3>java chicken</h3>
+            <p>
+              Placeholder
+            </p>
+          </div>
+          <div class="about-us-col">
+            <h3>steves java chicken</h3>
+            <p>
+              Placeholder
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+
+    <section id="our-products">
+      <div class="products-grid-wrapper reveal">
+        <div class="products-grid-container">
+          <div class="grid-item">
+            <img src="assets/images/picture.png" alt="" />
+            <p>Monolith</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/images/picture.png" alt="" />
+            <p>Loner</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/images/picture.png" alt="" />
+            <p>Bandit</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/images/picture.png" alt="" />
+            <p>Freedom</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/images/picture.png" alt="" />
+            <p>Duty</p>
+          </div>
+          <div class="grid-item">
+            <img src="assets/images/picture.png" alt="" />
+            <p>Ecologist</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action Section -->
+
+    <section id="contact">
+      <div class="contact-row reveal">
+        <div class="contact-col">
+          <div class="testimonial-wrapper">
+            <p>
+              When
+            </p>
+            <br />
+            <p><b>Mister</b> - Man of beans :)</p>
+          </div>
+        </div>
+        <div class="contact-col">
+          <div class="social-icon-wrapper">
+            <a href="#contact"
+              ><img src="assets/images/facebook.png" alt=""
+            /></a>
+            <a href="#contact"><img src="assets/images/mail.png" alt="" 
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <section id="footer-section">
+      <div class="footer-row">
+        <p>haha &copy; no</p>
+        <div class="footer-nav-links">
+          <ul>
+            <li><a href="#hero-section">lemonade stand</a></li>
+            <li><a href="#about-us">about</a></li>
+            <li><a href="#our-products">products</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+      //adding parallax effect to the hero section title
+      //learned this from Youtube Tutorial - by Online Tutorials - https://www.youtube.com/watch?v=1wfeqDyMUx4
+      let titleOne = document.getElementById("title-one");
+      let titleTwo = document.getElementById("title-two");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+
+        titleOne.style.right = value * 0.5 + "px";
+        titleTwo.style.left = value * 0.5 + "px";
+      });
+    </script>
   </body>
 </html>
-
-<!-- Landing Section  -->
-
-<section id="hero-section">
-  <div class="hero-title">
-    <div class="hero-sub-container-one">
-      <span id="title-one">SQUISH</span>
-    </div>
-    <div class="hero-sub-container-two">
-      <img
-        src="assets/images/orange-slice.png"
-        id="orange-slice-1"
-        class="rotate"
-        alt=""
-      />
-      <img
-        src="assets/images/orange-slice.png"
-        id="orange-slice-2"
-        class="rotate"
-        alt=""
-      />
-      <span id="title-two">IT</span>
-    </div>
-  </div>
-</section>
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-  rel="stylesheet"
-/>
-
-<section id="about-us">
-  <div class="about-us-container">
-    <div class="about-us-row reveal">
-      <div class="about-us-col">
-        <h3>about us</h3>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </p>
-      </div>
-      <div class="about-us-col">
-        <h3>freshly squeezed</h3>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </p>
-      </div>
-      <div class="about-us-col">
-        <h3>a call away</h3>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
