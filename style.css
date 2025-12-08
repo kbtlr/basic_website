@@ -3,7 +3,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
   max-width: 100vw;
   box-sizing: border-box;
@@ -193,14 +193,6 @@ nav .fa {
   z-index: 15;
   width: 100%;
 }
-#title-two {
-  font-size: 220px;
-  font-family: "Londrina Outline", cursive;
-  color: white;
-  position: relative;
-  transition: 0.7s;
-  z-index: 15;
-}
 .hero-sub-container-one {
   background-color: transparent;
 }
@@ -382,10 +374,6 @@ nav .fa {
 .grid-item img {
   width: 50%;
   transition: 1s;
-}
-
-.grid-item:hover img {
-  animation: rotation 10s infinite linear;
 }
 
 .grid-item img:hover {
