@@ -301,7 +301,7 @@ nav .fa {
 }
 
 .about-me-container {
-  text-align: left;
+  text-align: center;
   width: 80%;
   margin: auto;
   min-height: 100vh;
@@ -318,8 +318,8 @@ nav .fa {
 }
 
 .about-me-col {
-  padding: 10px;
-  flex-basis: 31%;
+  padding: 30px;
+  flex-basis: 100%;
 }
 
 .about-me-col h3 {
@@ -381,8 +381,8 @@ nav .fa {
 }
 
 .grid-item p {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 200;
   color: white;
 }
 /* Adding Responsiveness */
